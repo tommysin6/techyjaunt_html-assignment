@@ -15,22 +15,35 @@
             .about-div {
                 text-align: justify;
             }
+            table {
+                border: 2px solid rgb(20, 20, 20);
+                font-family: sans-serif;
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(142, 8, 8);
+            }
         </style>
     </head>
-    <body>
+    <body style="background-color: bisque;">
         <div class="intro-div" style="background-color: brown; color: antiquewhite;">
             <h1 style="text-align: center;">Okusanya Amos Oluwatomisin</h1>
-                <p class="intro-paragraph">I am Okusanya Amos Oluwatomisin,  an aspiring front-end web developer.</p>
+            <p class="intro-paragraph">I am Okusanya Amos Oluwatomisin, an aspiring front-end web developer.</p>
         </div>
         <div class="image-div">
-            <img src="Profile Pic.jpg" alt="A picture of me" style="max-width: 300px;">
+            <img src="Profile Pic.jpg" alt="A picture of me" style="max-width: 500px;">
         </div>
+        <!--An external link to google website-->
         <div>
             <a href="https://www.google.com.ng/" target="_blank">Click here to go to <strong>Google</strong>.</a>
         </div>
+        <!--An internal link to the about page-->
         <div>
             <a href="about.html">Click here to go to the about page.</a>
         </div>
+        <!--An internal link to the about me section-->
         <div>
             <a href="#about-me_section">Click here to go the <strong>About Me Section</strong>.</a>
         </div>
@@ -45,9 +58,32 @@
         </div>
         <h1 style="background-color: brown; color: beige; text-align: center;" id="about-me_section">About Me Section</h1>
         <div>
+            <h2>Contact Form</h2>
             <form>
-
+                <div><label for="name">Name: <input type="text" id="name" name="name" required></label></div><br>
+                <div><label for="email" style="display: contents;">Email: <input type="email" id="email" name="email" required></label></div><br>
+                <div><label for="message" style="display: flex;">Message: <textarea id="message" name="message" required></textarea></label></div><br>
+                <div style="padding: 10px;"><button type="submit">Submit</button></div>
             </form>
+            <br>
+        </div>
+            <table border="1" cellpadding="4" cellspacing="0">
+                <tr>
+                    <th>Movie</th>
+                    <th>Reason Why I Like It</th>
+                </tr>
+                <tr>
+                    <td>Mission Impossible</td>
+                    <td>I like it because of it's action</td>
+                </tr>
+                <tr>
+                    <td>Red Notice</td>
+                    <td>I like it because of it's plot twist</td>
+                </tr>
+                <tr>
+                    <td>Fast and Furious</td>
+                    <td>I like it because of it's action and the driving</td>
+                </tr>
         </div>
     </body>
 </html>
